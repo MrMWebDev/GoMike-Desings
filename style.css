@@ -195,7 +195,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0);
 }
 
 .d-bloc .panel button:hover,
@@ -317,14 +317,14 @@ a:hover {
 
 .navbar .nav {
   padding-top: 2px;
-  margin-right: -16px;
+  margin-right: 0;
   float: right;
   z-index: 1;
 }
 
 .nav > li {
   float: left;
-  margin-top: 4px;
+  margin: 4px 0 0 15px;
   font-size: 16px;
 }
 
@@ -824,11 +824,11 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-  background-image: url("img/atlanta%20made%20sign.jpg");
+  background-image: url("img/atlanta_made_sign.jpg");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-  background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+  background-image: url("img/atlanta_made_sign_orange.jpg");
 }
 
 @media (max-width: 1024px) {

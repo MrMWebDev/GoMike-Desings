@@ -3,10 +3,10 @@
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 @font-face {
-  font-family: "FontAwesome";
+  font-family: FontAwesome;
   src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"),
-    url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"),
+    url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -96,8 +96,8 @@
 }
 @-webkit-keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(359deg);
@@ -106,8 +106,8 @@
 }
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(359deg);
@@ -115,40 +115,35 @@
   }
 }
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
-:root .fa-rotate-90,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
-:root .fa-flip-horizontal,
-:root .fa-flip-vertical {
+:root .fa-rotate-90 {
   filter: none;
 }
 .fa-stack {
@@ -214,8 +209,8 @@
 .fa-check:before {
   content: "\f00c";
 }
-.fa-remove:before,
 .fa-close:before,
+.fa-remove:before,
 .fa-times:before {
   content: "\f00d";
 }
@@ -231,8 +226,8 @@
 .fa-signal:before {
   content: "\f012";
 }
-.fa-gear:before,
-.fa-cog:before {
+.fa-cog:before,
+.fa-gear:before {
   content: "\f013";
 }
 .fa-trash-o:before {
@@ -265,8 +260,8 @@
 .fa-play-circle-o:before {
   content: "\f01d";
 }
-.fa-rotate-right:before,
-.fa-repeat:before {
+.fa-repeat:before,
+.fa-rotate-right:before {
   content: "\f01e";
 }
 .fa-refresh:before {
@@ -357,8 +352,8 @@
 .fa-video-camera:before {
   content: "\f03d";
 }
-.fa-photo:before,
 .fa-image:before,
+.fa-photo:before,
 .fa-picture-o:before {
   content: "\f03e";
 }
@@ -502,8 +497,8 @@
 .fa-eye-slash:before {
   content: "\f070";
 }
-.fa-warning:before,
-.fa-exclamation-triangle:before {
+.fa-exclamation-triangle:before,
+.fa-warning:before {
   content: "\f071";
 }
 .fa-plane:before {
@@ -561,8 +556,8 @@
 .fa-key:before {
   content: "\f084";
 }
-.fa-gears:before,
-.fa-cogs:before {
+.fa-cogs:before,
+.fa-gears:before {
   content: "\f085";
 }
 .fa-comments:before {
@@ -718,16 +713,16 @@
 .fa-paperclip:before {
   content: "\f0c6";
 }
-.fa-save:before,
-.fa-floppy-o:before {
+.fa-floppy-o:before,
+.fa-save:before {
   content: "\f0c7";
 }
 .fa-square:before {
   content: "\f0c8";
 }
+.fa-bars:before,
 .fa-navicon:before,
-.fa-reorder:before,
-.fa-bars:before {
+.fa-reorder:before {
   content: "\f0c9";
 }
 .fa-list-ul:before {
@@ -781,16 +776,16 @@
 .fa-columns:before {
   content: "\f0db";
 }
-.fa-unsorted:before,
-.fa-sort:before {
+.fa-sort:before,
+.fa-unsorted:before {
   content: "\f0dc";
 }
-.fa-sort-down:before,
-.fa-sort-desc:before {
+.fa-sort-desc:before,
+.fa-sort-down:before {
   content: "\f0dd";
 }
-.fa-sort-up:before,
-.fa-sort-asc:before {
+.fa-sort-asc:before,
+.fa-sort-up:before {
   content: "\f0de";
 }
 .fa-envelope:before {
@@ -803,8 +798,8 @@
 .fa-undo:before {
   content: "\f0e2";
 }
-.fa-legal:before,
-.fa-gavel:before {
+.fa-gavel:before,
+.fa-legal:before {
   content: "\f0e3";
 }
 .fa-dashboard:before,
@@ -817,8 +812,8 @@
 .fa-comments-o:before {
   content: "\f0e6";
 }
-.fa-flash:before,
-.fa-bolt:before {
+.fa-bolt:before,
+.fa-flash:before {
   content: "\f0e7";
 }
 .fa-sitemap:before {
@@ -827,8 +822,8 @@
 .fa-umbrella:before {
   content: "\f0e9";
 }
-.fa-paste:before,
-.fa-clipboard:before {
+.fa-clipboard:before,
+.fa-paste:before {
   content: "\f0ea";
 }
 .fa-lightbulb-o:before {
@@ -998,8 +993,8 @@
 .fa-code-fork:before {
   content: "\f126";
 }
-.fa-unlink:before,
-.fa-chain-broken:before {
+.fa-chain-broken:before,
+.fa-unlink:before {
   content: "\f127";
 }
 .fa-question:before {
@@ -1113,20 +1108,20 @@
 .fa-compass:before {
   content: "\f14e";
 }
-.fa-toggle-down:before,
-.fa-caret-square-o-down:before {
+.fa-caret-square-o-down:before,
+.fa-toggle-down:before {
   content: "\f150";
 }
-.fa-toggle-up:before,
-.fa-caret-square-o-up:before {
+.fa-caret-square-o-up:before,
+.fa-toggle-up:before {
   content: "\f151";
 }
-.fa-toggle-right:before,
-.fa-caret-square-o-right:before {
+.fa-caret-square-o-right:before,
+.fa-toggle-right:before {
   content: "\f152";
 }
-.fa-euro:before,
-.fa-eur:before {
+.fa-eur:before,
+.fa-euro:before {
   content: "\f153";
 }
 .fa-gbp:before {
@@ -1136,23 +1131,23 @@
 .fa-usd:before {
   content: "\f155";
 }
-.fa-rupee:before,
-.fa-inr:before {
+.fa-inr:before,
+.fa-rupee:before {
   content: "\f156";
 }
 .fa-cny:before,
+.fa-jpy:before,
 .fa-rmb:before,
-.fa-yen:before,
-.fa-jpy:before {
+.fa-yen:before {
   content: "\f157";
 }
-.fa-ruble:before,
 .fa-rouble:before,
-.fa-rub:before {
+.fa-rub:before,
+.fa-ruble:before {
   content: "\f158";
 }
-.fa-won:before,
-.fa-krw:before {
+.fa-krw:before,
+.fa-won:before {
   content: "\f159";
 }
 .fa-bitcoin:before,
@@ -1310,8 +1305,8 @@
 .fa-arrow-circle-o-left:before {
   content: "\f190";
 }
-.fa-toggle-left:before,
-.fa-caret-square-o-left:before {
+.fa-caret-square-o-left:before,
+.fa-toggle-left:before {
   content: "\f191";
 }
 .fa-dot-circle-o:before {
@@ -1323,8 +1318,8 @@
 .fa-vimeo-square:before {
   content: "\f194";
 }
-.fa-turkish-lira:before,
-.fa-try:before {
+.fa-try:before,
+.fa-turkish-lira:before {
   content: "\f195";
 }
 .fa-plus-square-o:before {
@@ -1345,13 +1340,13 @@
 .fa-openid:before {
   content: "\f19b";
 }
-.fa-institution:before,
 .fa-bank:before,
+.fa-institution:before,
 .fa-university:before {
   content: "\f19c";
 }
-.fa-mortar-board:before,
-.fa-graduation-cap:before {
+.fa-graduation-cap:before,
+.fa-mortar-board:before {
   content: "\f19d";
 }
 .fa-yahoo:before {
@@ -1464,17 +1459,17 @@
 .fa-file-powerpoint-o:before {
   content: "\f1c4";
 }
+.fa-file-image-o:before,
 .fa-file-photo-o:before,
-.fa-file-picture-o:before,
-.fa-file-image-o:before {
+.fa-file-picture-o:before {
   content: "\f1c5";
 }
-.fa-file-zip-o:before,
-.fa-file-archive-o:before {
+.fa-file-archive-o:before,
+.fa-file-zip-o:before {
   content: "\f1c6";
 }
-.fa-file-sound-o:before,
-.fa-file-audio-o:before {
+.fa-file-audio-o:before,
+.fa-file-sound-o:before {
   content: "\f1c7";
 }
 .fa-file-movie-o:before,
@@ -1495,21 +1490,21 @@
 }
 .fa-life-bouy:before,
 .fa-life-buoy:before,
+.fa-life-ring:before,
 .fa-life-saver:before,
-.fa-support:before,
-.fa-life-ring:before {
+.fa-support:before {
   content: "\f1cd";
 }
 .fa-circle-o-notch:before {
   content: "\f1ce";
 }
 .fa-ra:before,
-.fa-resistance:before,
-.fa-rebel:before {
+.fa-rebel:before,
+.fa-resistance:before {
   content: "\f1d0";
 }
-.fa-ge:before,
-.fa-empire:before {
+.fa-empire:before,
+.fa-ge:before {
   content: "\f1d1";
 }
 .fa-git-square:before {
@@ -1518,9 +1513,9 @@
 .fa-git:before {
   content: "\f1d3";
 }
+.fa-hacker-news:before,
 .fa-y-combinator-square:before,
-.fa-yc-square:before,
-.fa-hacker-news:before {
+.fa-yc-square:before {
   content: "\f1d4";
 }
 .fa-tencent-weibo:before {
@@ -1533,12 +1528,12 @@
 .fa-weixin:before {
   content: "\f1d7";
 }
-.fa-send:before,
-.fa-paper-plane:before {
+.fa-paper-plane:before,
+.fa-send:before {
   content: "\f1d8";
 }
-.fa-send-o:before,
-.fa-paper-plane-o:before {
+.fa-paper-plane-o:before,
+.fa-send-o:before {
   content: "\f1d9";
 }
 .fa-history:before {
@@ -1565,8 +1560,8 @@
 .fa-bomb:before {
   content: "\f1e2";
 }
-.fa-soccer-ball-o:before,
-.fa-futbol-o:before {
+.fa-futbol-o:before,
+.fa-soccer-ball-o:before {
   content: "\f1e3";
 }
 .fa-tty:before {
@@ -1680,9 +1675,9 @@
 .fa-cc:before {
   content: "\f20a";
 }
+.fa-ils:before,
 .fa-shekel:before,
-.fa-sheqel:before,
-.fa-ils:before {
+.fa-sheqel:before {
   content: "\f20b";
 }
 .fa-meanpath:before {
@@ -1797,8 +1792,8 @@
 .fa-user-times:before {
   content: "\f235";
 }
-.fa-hotel:before,
-.fa-bed:before {
+.fa-bed:before,
+.fa-hotel:before {
   content: "\f236";
 }
 .fa-viacoin:before {
@@ -1813,8 +1808,8 @@
 .fa-medium:before {
   content: "\f23a";
 }
-.fa-yc:before,
-.fa-y-combinator:before {
+.fa-y-combinator:before,
+.fa-yc:before {
   content: "\f23b";
 }
 .fa-optin-monster:before {
@@ -1827,8 +1822,8 @@
   content: "\f23e";
 }
 .fa-battery-4:before,
-.fa-battery:before,
-.fa-battery-full:before {
+.fa-battery-full:before,
+.fa-battery:before {
   content: "\f240";
 }
 .fa-battery-3:before,
@@ -1899,8 +1894,8 @@
 .fa-hand-rock-o:before {
   content: "\f255";
 }
-.fa-hand-stop-o:before,
-.fa-hand-paper-o:before {
+.fa-hand-paper-o:before,
+.fa-hand-stop-o:before {
   content: "\f256";
 }
 .fa-hand-scissors-o:before {
@@ -1963,8 +1958,8 @@
 .fa-internet-explorer:before {
   content: "\f26b";
 }
-.fa-tv:before,
-.fa-television:before {
+.fa-television:before,
+.fa-tv:before {
   content: "\f26c";
 }
 .fa-contao:before {
@@ -2117,13 +2112,13 @@
 .fa-assistive-listening-systems:before {
   content: "\f2a2";
 }
-.fa-asl-interpreting:before,
-.fa-american-sign-language-interpreting:before {
+.fa-american-sign-language-interpreting:before,
+.fa-asl-interpreting:before {
   content: "\f2a3";
 }
+.fa-deaf:before,
 .fa-deafness:before,
-.fa-hard-of-hearing:before,
-.fa-deaf:before {
+.fa-hard-of-hearing:before {
   content: "\f2a4";
 }
 .fa-glide:before {
@@ -2132,8 +2127,8 @@
 .fa-glide-g:before {
   content: "\f2a6";
 }
-.fa-signing:before,
-.fa-sign-language:before {
+.fa-sign-language:before,
+.fa-signing:before {
   content: "\f2a7";
 }
 .fa-low-vision:before {
@@ -2192,12 +2187,12 @@
 .fa-address-book-o:before {
   content: "\f2ba";
 }
-.fa-vcard:before,
-.fa-address-card:before {
+.fa-address-card:before,
+.fa-vcard:before {
   content: "\f2bb";
 }
-.fa-vcard-o:before,
-.fa-address-card-o:before {
+.fa-address-card-o:before,
+.fa-vcard-o:before {
   content: "\f2bc";
 }
 .fa-user-circle:before {
@@ -2230,8 +2225,8 @@
   content: "\f2c6";
 }
 .fa-thermometer-4:before,
-.fa-thermometer:before,
-.fa-thermometer-full:before {
+.fa-thermometer-full:before,
+.fa-thermometer:before {
   content: "\f2c7";
 }
 .fa-thermometer-3:before,
@@ -2253,9 +2248,9 @@
 .fa-shower:before {
   content: "\f2cc";
 }
+.fa-bath:before,
 .fa-bathtub:before,
-.fa-s15:before,
-.fa-bath:before {
+.fa-s15:before {
   content: "\f2cd";
 }
 .fa-podcast:before {
